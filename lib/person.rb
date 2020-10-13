@@ -3,6 +3,7 @@ class Person
 
   def initialize(avi_attributes, spencer_attributes)
     avi_attributes.each {|key, value| self.send(("#{key}="), value)}
+    spencer_attributes.each {|key, value| self.send(("#{key}="), value)}
 
   end
 
